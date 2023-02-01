@@ -1,15 +1,15 @@
 class DocumentInfos:
 
-    title = u'Titre de votre travail personnel (modifier dans `source/infos.py`)'
-    first_name = 'Prénom (infos.py)'
-    last_name = 'Nom de famille (infos.py)'
+    title = u'Algorithme de FFT'
+    first_name = 'Luca'
+    last_name = 'Charlier'
     author = f'{first_name} {last_name}'
     year = u'2023'
-    month = u'Janvier'
+    month = u'Février'
     seminary_title = u'Travail personnel OCI'
     tutor = u"Cédric Donner"
     release = "(Version finale)"
-    repository_url = "https://github.com/<username>/<reponame>"
+    repository_url = "https://github.com/LucaCharlier/FFT_Luca_Charlier"
 
     @classmethod
     def date(cls):
