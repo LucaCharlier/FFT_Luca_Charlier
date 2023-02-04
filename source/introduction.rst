@@ -3,16 +3,22 @@
 Introduction
 ############
 
-..
-    Ceci est un commentaire
+Considérons un patient insomniaque :math:`P` se rendant à l'hôpital pour effectuer une électroencéphalographie. Plusieurs électrodes seront placées sur son crâne, et après avoir passé une nuit en clinique, les médecins sauront lui trouver un remède à ses troubles du sommeil.
 
-Écrivez votre introduction. L'introduction doit contenir les éléments suivants
+Le cerveau est le siège d'une intense activité électrique. On distingue plusieurs régions et niveaux d'activités différents qui produisent chacuns des fréquences électriques différentes. Ainsi, le signal final est un méli-mélo de superposition de fréquences et intensités électriques différentes : comment alors séparer les informations ?
 
-- évoquer le but du projet (motivation personnelle)
-- évoquer les notions scientifiques / techiques utilisées dans le projet
-- Motivation
+..  figure:: figures/electro_cerveau.png
+    :width: 80%
+    :align: center
+    
+    Electroencéphalographie d'une seconde
 
-  - S'il s'agit d'un sujet théorique, évoquer l'intérêt / l'importance du sujet
-  - S'il s'agit d'un projet pratique (programmation / etc ...), indiquer ce que
-    votre projet apporte, ce qu'il permet de faire.
+Appelons :math:`f(t)` la fonction réelle décrivant cette courbe. Nous admettons de pouvoir décomposer notre signal avec une série de Fourier :
+
+.. math::
+  
+  f(t) = \sum_{n=1}^\infty \left(a_n\cdot \cos(nt)+b_n \cdot \sin(nt)\right)
+
+Cela signifie que la fonction :math:`f` se laisse écrire comme la superposition
+
 
