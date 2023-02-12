@@ -41,8 +41,15 @@ Nous disons donc que n'importe quel signal peut être écrit comme une somme de 
 
 Le gif précédent permet une représentation intuitive du fonctionnement de la décomposition. Les barres montrées à la fin de l'animation correspondent aux coefficients :math:`c_n` de la forme exponentielle (détaillée dans la section suivante), et permettent de simplifier la notation en passant de deux coefficients à un seul.
 
-Le graphe des barres permet une représentation dite *spectrale*, alternaltivement à une représentation *temporelle* à la quelle nous sommes habitués : on représente les contributions des différentes fonctions harmoniques plutôt que leur somme. 
+Le graphe des barres permet une représentation dite *spectrale* (notée :math:`\hat{f}`), alternaltivement à une représentation *temporelle* à la quelle nous sommes habitués : on représente les contributions des différentes fonctions harmoniques plutôt que leur somme. 
 
 ..  warning::
     
     Il est important de noter que les deux graphes portent l'exacte même information, simplement représentée différemment.
+
+Grâce à plusieurs méthodes que nous allons aborder dans la suite, il est possible de retrouver les coefficients à partir du signal entier. Ceci permet par exemple aux médecins de différencier les différentes ondes. Les ondes *delta* correspondent aux harmoniques de moins de 4, les ondes *theta* aux harmoniques 4 à 8 etc. Ceci permet au médecin d'ensuite analyser les différentes parties du cerveau sans avoir à placer un dispositif compliqué.
+
+.. admonition:: Vocabulaire
+
+  La **série de Fourier** correspond à la somme des harmoniques multipliées avec leurs coefficients.
+
