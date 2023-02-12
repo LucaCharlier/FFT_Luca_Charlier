@@ -19,6 +19,30 @@ Appelons :math:`f(t)` la fonction réelle décrivant cette courbe. Nous admetton
   
   f(t) = \sum_{n=1}^\infty \left(a_n\cdot \cos(nt)+b_n \cdot \sin(nt)\right)
 
-Cela signifie que la fonction :math:`f` se laisse écrire comme la superposition
+Cela signifie que la fonction :math:`f` se laisse écrire comme la superposition de fonctions harmoniques.
 
+..  admonition:: Info
+    
+    Une fonction harmonique est, dans notre contexte simplifié, une fonction sinusoïdale (:math:`\sin, \cos`) dont l'argument est multiplié par un nombre entier.
 
+    .. math::
+
+      \sin(2x), \cos(30x), \sin(6x)
+
+    sont pour l'exemple des fonctions harmoniques.
+
+Nous disons donc que n'importe quel signal peut être écrit comme une somme de plusieurs sinus et cosinus harmoniques, multipliés par un coefficient qui leur propre. Certaines fonctions harmoniques apportent une contribution plus importante que d'autres pour construire le signal, et le mélange parfait est alors égal au signal.
+
+..  figure:: figures/Fourier_transform_time_and_frequency_domains.gif
+    :width: 50%
+    :align: center
+
+    Decomposition d'un signal à l'aide de Fourier
+
+Le gif précédent permet une représentation intuitive du fonctionnement de la décomposition. Les barres montrées à la fin de l'animation correspondent aux coefficients :math:`c_n` de la forme exponentielle (détaillée dans la section suivante), et permettent de simplifier la notation en passant de deux coefficients à un seul.
+
+Le graphe des barres permet une représentation dite *spectrale*, alternaltivement à une représentation *temporelle* à la quelle nous sommes habitués : on représente les contributions des différentes fonctions harmoniques plutôt que leur somme. 
+
+..  warning::
+    
+    Il est important de noter que les deux graphes portent l'exacte même information, simplement représentée différemment.
