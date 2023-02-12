@@ -13,6 +13,7 @@ Algorithme de FFT
     :numbered:
 
     introduction.rst
+    Calcul.rst
     sandbox.rst
     conclusion.rst
     references.rst
