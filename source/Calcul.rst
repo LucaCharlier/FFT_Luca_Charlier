@@ -46,11 +46,11 @@ Comme annoncé précédemment, nous souhaitons procéder à une simplification d
 
         \cos(nx) = \frac{e^{inx}+e{-inx}}{2} \text{ et } \sin(nx) = \frac{e^{inx}-e^{-inx}}{2}.
 
-    En insérant dans la définition de :math:`s_N(x)` nous obtenons 
+    En insérant dans la définition de :math:`s(x)` nous obtenons 
 
     ..  math::
 
-        s(x) = \frac{a_0}{2} + \sum^\infty_{n=1} \left(\frac{a_n-ib_n}{2}\right) e^{inx} \sum^\infty_{n=1} \left(\frac{a_n+ib_n}{2}\right) e^{-inx}.
+        s(x) = \frac{a_0}{2} + \sum^\infty_{n=1} \left(\frac{a_n-ib_n}{2}\right) e^{inx}+ \sum^\infty_{n=1} \left(\frac{a_n+ib_n}{2}\right) e^{-inx}.
 
     Maintenant nous définissons les coefficients recherchés
 
@@ -62,7 +62,7 @@ Comme annoncé précédemment, nous souhaitons procéder à une simplification d
 
     ..  math::
 
-        s(x) = \frac{a_0}{2} + \sum^{-\infty}_{n=-1} \bar{c}_{-n}e{-inx} + \sum^\infty_{n=1} c_ne^{-inx}
+        s(x) = \frac{a_0}{2} + \sum^{-\infty}_{n=-1} \bar{c}_{-n}e^{-inx} + \sum^\infty_{n=1} c_ne^{-inx}
 
     Nous définissons de plus
 
@@ -82,16 +82,25 @@ Comme annoncé précédemment, nous souhaitons procéder à une simplification d
 
         c_n = \frac{1}{2p}\int^p_{-p} s(x)e^{inx}dx.
 
-    En particulier pour :math:`n=0` et :math:`n<0`:
+    En particulier pour :math:`n=0`:
 
-    ..  math::¨
+    ..  math::
 
         c_0 = \frac{1}{2p}\int^p_{-p}s(x)dx
 
 
-Pour les flemmards qui auraient pas voulu suivre la démonstration, voici le résultat final
+Pour les flemmards qui auraient pas voulu suivre la démonstration, voici le résultat final :
 
 ..  admonition:: Série exponentielle complexe 
 
+    Nous pouvons écrire notre fonction :math:`s(x)` sous la forme:
+    
+    ..  math::
 
+        s(x) = \sum^\infty_{-\infty} c_n e^{-inx}
+
+    avec
+
+    ..  math::
+        c_n = \frac{1}{2p}\int^p_{-p} s(x)e^{inx}dx
 
