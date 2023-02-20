@@ -14,6 +14,7 @@ Algorithme de FFT
 
     introduction.rst
     Calcul.rst
+    FFT_complexity.rst
     sandbox.rst
     conclusion.rst
     references.rst

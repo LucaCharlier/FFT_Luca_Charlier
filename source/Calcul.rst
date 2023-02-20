@@ -1,7 +1,7 @@
 .. _Calcul.rst:
 
 Calcul des transformées de Fourier
-############
+##################################
 
 .. admonition:: Coefficients
 
@@ -17,6 +17,8 @@ Calcul des transformées de Fourier
         \end{cases}
 
     où :math:`p` est la période de la fonction. Si la fonction est apériodique, nous posons :math:`p = \infty`.
+
+Ceci correspond à l'air du produit des fonctions durant une période. Intuitivement, il s'agit de déterminer à quel point la fonction harmonique fait partie de :math:`s(x)`, à quel point ces deux fonctions sont correlées.
 
 Comme annoncé précédemment, nous souhaitons procéder à une simplification des coefficients afin de n'en avoir plus qu'un pour chaque fréquence.
 
@@ -102,5 +104,14 @@ Pour les flemmards qui auraient pas voulu suivre la démonstration, voici le ré
     avec
 
     ..  math::
-        c_n = \frac{1}{2p}\int^p_{-p} s(x)e^{inx}dx
+        c_n = \frac{1}{2p}\int^p_{-p} s(x)e^{inx}
+        
+
+En faisant le lien avec la section précédente, nous pouvons noter en particulier que
+
+..  math::
+
+    \hat{f}(n) = c_n, n\in \mathbb{N}
+
+Cette définition peut être étendue aux nombres réels, mais nous nous en tiendrons à une description qualitative durant les applications.
 
