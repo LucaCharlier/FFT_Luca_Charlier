@@ -76,7 +76,7 @@ Comme annoncé précédemment, nous souhaitons procéder à une simplification d
 
     ..  math::
 
-        s(x) = \sum^\infty_{-\infty} c_n e^{-inx}
+        s(x) = \sum^\infty_{n=-\infty} c_n e^{-inx}
 
     A partir de :math:`c_n = \frac{1}{2}(a_n + ib_n)` on peut arriver par des méthodes similaires à 
 
@@ -115,3 +115,30 @@ En faisant le lien avec la section précédente, nous pouvons noter en particuli
 
 Cette définition peut être étendue aux nombres réels, mais nous nous en tiendrons à une description qualitative durant les applications.
 
+Transformée de Fourier discrète 
+===============================
+
+Dans la pratique, les signaux obtenus ne sont pas continues, mais des points mesurés par des outils à des intervalles de temps constants, par exemple.
+
+L'échantillon suivant permet la visualisation des données.
+
+..  figure:: figures/DFT.jpg
+    :width: 80%
+    :align: center
+
+    Un signal discret
+
+La transformée de Fourier peut être réutilisée sans grandes adaptations. Il suffit de remplacer l'intégrale par une somme de Riemmann approximative.
+
+Si l'on indexe les points complexes comme :math:`X_0, X_1, \dots, X_N` alors
+
+..  math::
+    \hat{f}(n) = \frac{1}{N} \sum^{N-1}_{k=0} X_k \cdot e^{ink}, n \in \mathbb{Z}\cap[0;N].
+
+
+..  admonition:: Nombre de données
+    
+    Si l'on dispose de :math:`N` points, alors l'on peut calculer la transformée de Fourier pour :math:`N` fréquences, comprises entre 0 et :math:`N` (puisque que l'on ne crée pas d'information avec le spectre).
+
+
+Plus le nombre de points est élevé, plus il est possible d'être précis. De plus il est interessant de noter qu'il faut alors calculer :math:`N^2` aires afin de couvrir le spectre. L'algorithme brut est donc de :math:`\mathcal{O}(n^2)`.
