@@ -55,3 +55,20 @@ La vidéo suivante permet une compréhension intuitive de l'algorithme de FFT:
 Implémentation Python
 =====================
 
+Nous allons à présent implémenter l'algorithme en python. Nous souhaitons partir d'un ensemble :math:`A = \{a_0, a_1, a_2, \dots, a_n\}, \log_2(n) \in \mathbb{N}` de points pour arriver à un ensemble :math:`Y = \{A_0, A_1, A_2, \dots, A_n\}` qui contient le spectre de :math:`A`.
+
+Nous utilisons de plus la fonction `complex` qui permet le calcul de valeurs imaginaires.
+
+
+..  literalinclude:: scripts/factorial.py
+    :linenos:
+    :emphasize-lines: 9,10,11,12,15,16
+
+Les lignes 5 à 8 préparent la transformée. On y place de plus une condition d'arrêt, lorsque nous avons décomposé toutes les listes à un seul point, donc de longueur 1.
+
+Les lignes 9 et 10 séparent les éléments pairs des éléments impairs.
+
+Les lignes 10 et 12 constituent le coeur de l'algorithme. On y place la récursion, en demandant d'aller récupérer les valeurs de :math:`Y` pour un ensemble moitié moins grand (calcul de la transformée de Fourier de :math:`E_n \text{ et } O_n`).
+
+Finalement, on additionne les différents :math:`E_n \text{ et } O_n` pour chaque fréquence :math:`n` afin d'en obtenir le spectre.
+
