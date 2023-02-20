@@ -51,5 +51,5 @@ Grâce à plusieurs méthodes que nous allons aborder dans la suite, il est poss
 
 .. admonition:: Vocabulaire
 
-  La **série de Fourier** correspond à la somme des harmoniques multipliées avec leurs coefficients.
+  La **série de Fourier** correspond à la somme des harmoniques multipliées avec leurs coefficients. Il est important de note que la série de Fourier correspondante peine parfois à converger vers la fonction voulue.
 
