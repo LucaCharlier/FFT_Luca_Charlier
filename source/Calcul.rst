@@ -99,7 +99,7 @@ Pour les flemmards qui auraient pas voulu suivre la démonstration, voici le ré
     
     ..  math::
 
-        s(x) = \sum^\infty_{-\infty} c_n e^{-inx}
+        s(x) = \sum^\infty_{n=-\infty} c_n e^{-inx}
 
     avec
 
@@ -118,7 +118,7 @@ Cette définition peut être étendue aux nombres réels, mais nous nous en tien
 Transformée de Fourier discrète 
 ===============================
 
-Dans la pratique, les signaux obtenus ne sont pas continues, mais des points mesurés par des outils à des intervalles de temps constants, par exemple.
+Dans la pratique, les signaux obtenus ne sont pas continus, mais des points mesurés par des outils à des intervalles de temps constants, par exemple.
 
 L'échantillon suivant permet la visualisation des données.
 
@@ -128,12 +128,18 @@ L'échantillon suivant permet la visualisation des données.
 
     Un signal discret
 
-La transformée de Fourier peut être réutilisée sans grandes adaptations. Il suffit de remplacer l'intégrale par une somme de Riemmann approximative.
+La transformée de Fourier peut être réutilisée sans grandes adaptations. Il suffit de remplacer l'intégrale par une somme de Riemann approximative.
 
-Si l'on indexe les points complexes comme :math:`X_0, X_1, \dots, X_N` alors
+Si l'on indexe les points complexes comme :math:`x_0, x_1, \dots, x_N` alors
 
 ..  math::
-    \hat{f}(n) = \frac{1}{N} \sum^{N-1}_{k=0} X_k \cdot e^{ink}, n \in \mathbb{Z}\cap[0;N].
+    \hat{f}(n) =: X_n =\sum^{N-1}_{k=0} x_k \cdot e^{-ink}, n \in \mathbb{Z}\cap[0;N].
+
+De façon inverse nous avons aussi:
+
+..  math::
+    x_n = \frac{1}{N} \sum^{N-1}_{k=0} X_k \cdot e^{ink}, n \in \mathbb{Z}\cap[0;N].
+
 
 
 ..  admonition:: Nombre de données
