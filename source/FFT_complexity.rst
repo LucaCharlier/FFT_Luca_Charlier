@@ -17,9 +17,7 @@ Bien que publié trop tardivement, un algorithme plus efficace fut (re)découver
 
         X_n = \underbrace{\sum^{\frac{N}{2}-1}_{k=0} x_{2^k}e^{-2ink}}_{E_n} + e^{-in} \underbrace{\sum^{\frac{N}{2}-1}_{k=0} x_{2k+1}e^{-2ink}}_{O_n} =: E_n + e^{-in}O_n
 
-    Intuitivement, puisque les harmoniques se coupent parfois de manière prévisible, selon la parité de :math:`n`, il n'est alors plus nécéssaire de recalculer les valeurs.
-    
-    De même nous pouvons réecrire de façon analogue
+    Intuitivement, les harmoniques paires et impaires se coupent respectivement entre elles de façon prévisible. Puisque :math:`e^{-2ink} = e^{-2in(N/2 + k)}`, il est possible de parvenir à montrer que
 
     ..  math::
         X_{n+\frac{N}{2}} = E_n - e^{-in}O_n
@@ -47,6 +45,13 @@ Bien que publié trop tardivement, un algorithme plus efficace fut (re)découver
 
 La FFT permet alors d'effectuer les mêmes calculs en un peu moins de 35 minutes. Si cet algorithme avait été (re)découvert plus tôt, peut-être y aurait-il moins d'armes nucléaires sur terre.
 
+La vidéo suivante permet une compréhension intuitive de l'algorithme de FFT: 
+
 .. raw:: html
 
     <iframe width="700" height="500" src="https://www.youtube.com/watch?v=nmgFG7PUHfo" frameborder="0" allowfullscreen></iframe>
+
+
+Implémentation Python
+=====================
+
