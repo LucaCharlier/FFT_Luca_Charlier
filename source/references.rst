@@ -21,7 +21,3 @@
 
 ..  only:: html
     
-    ..  rubric:: Webographie
-
-..  bibliography:: online.bib
-    :all:
