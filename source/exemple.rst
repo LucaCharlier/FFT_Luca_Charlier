@@ -1,4 +1,4 @@
-.. __exemple.rst:
+.. _exemple.rst:
 
 Exemple d'utilisation
 #####################
@@ -26,3 +26,12 @@ Numpy et Scipy automatisent la récupération des données et effectuent la FFT 
     :align: center
 
     Exemple d'affichage du spectre avec PyPlot
+
+
+..  admonition:: Le saviez-vous ?
+
+    Dans de nombreuses effets musicaux apparaît un graphe qui s'agite au fil de la musique. Il s'agit en général du spectre du son, pris sur des échantillons relativement courts, la hauteur indiquant l'intensité. Cela permet une visualisation du son et rend l'experience visuelle. La FFT est même artistique, en quelque sorte !
+
+    ..  figure:: figures/cool.jpg
+        :width: 80%
+        :align: center
