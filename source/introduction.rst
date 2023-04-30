@@ -33,7 +33,7 @@ Cela signifie que la fonction :math:`f` se laisse écrire comme la superposition
 
 Nous disons donc que n'importe quel signal peut être écrit comme une somme de plusieurs sinus et cosinus harmoniques, multipliés par un coefficient qui leur propre. Certaines fonctions harmoniques apportent une contribution plus importante que d'autres pour construire le signal, et le mélange parfait est alors égal au signal.
 
-..  figure:: figures/Fourier_transform_time_and_frequency_domains.gif
+..  figure:: figures/Fourier_transform_time_and_frequency_domains.jpg
     :width: 50%
     :align: center
 

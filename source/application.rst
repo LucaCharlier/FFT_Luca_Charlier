@@ -12,7 +12,7 @@ Dans de nombreux logiciels de traitement sonore, il est possible d'augmenter ou 
 
 ..  admonition:: Pitch Shift
 
-    ..  figure:: figures/spectrum.gif
+    ..  figure:: figures/spectrum.jpg
         :width: 80%
         :align: center
         
@@ -37,7 +37,8 @@ Compression d'images
 
 La FFT ne se limite pas qu'aux ondes sonores, mais peut aussi être utilisée pour les images. On represente alors des ondes spatiales planes. L'intensité de la fréquence donne alors l'intensité du ton de gris ajouté. La superposition de ces ondes permet alors une représentation de l'image.
 
-..  figure:: figures/imagespectrum.gif
+..  figure:: figures/imagespectrum.jpg
+
     :width: 60%
     :align: center
         
